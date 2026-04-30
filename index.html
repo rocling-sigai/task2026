@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ROCLING 2026 Shared Task</title>
+
+    
+    <!-- 匯入bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
+    <!-- 匯入jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+    <!-- 插入方程式 -->
+    <script async src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script async id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <link rel="stylesheet" href="main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+<!-- ============================================================================ -->
+
+
+    <div>
+        <nav class="nav navbar-default navbar-fixed-top topflex" id="topdiv">
+
+            <div class="navbar-header" id="navheader">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapsingNavbarMd">
+                    <span class="sr-only"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse navbar-collapse-center" id="collapsingNavbarMd">
+                <ul class="nav navbar-nav navbar-center" >
+
+                    <li class="single"><a href="javascript:;" class="navItems" navTo="#intro">Background </a></li>
+
+                    <li class="single"><a href="javascript:;" class="navItems" navTo="#task">Task Description</a></li>
+
+                    <li class="single"><a href="javascript:;" class="navItems" navTo="#registration">Data</a></li>
+
+                    <li class="single"><a href="javascript:;" class="navItems" navTo="#key_note">Evaluation</a></li>
+
+                    <!-- <li class="single"><a href="javascript:;" class="navItems" navTo="#ranking">Results</a></li> -->
+                    
+                    <li class="single"><a href="javascript:;" class="navItems" navTo="#special">Important Dates</a></li>
+
+                    <li class="single"><a href="javascript:;" class="navItems" navTo="#ref">References</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </div>
+   
+
+    <!-- ============================================================================ -->
+
+    <div class="welcome">
+        <div class="wrap">
+            <div class="item text">
+                
+                <h1><span style="color: #2D82B7;">ROCLING 2026 Shared Task </span><br>
+                Chinese Dimensional Sentiment Analysis for New Immigrant Reflection Texts (DSA-NIRT)</h1>
+                <div class="session">
+                    <h2>
+                        Organizers
+                    </h2>
+                    <div class="people">
+                        <div class="author">
+                            <p>
+                                <strong>林孜彌 Tzu-Mi Lin、劉雯妮 Wen-Ni Liu</strong><br>
+                                國立陽明交通大學 智能系統所<br>
+                                Institute of Artificial Intelligence Innovation<br>
+                                National Yang Ming Chiao Tung University<br>
+                            </p>
+                        </div>
+        
+                        <div class="author">
+                            <p>
+                                <strong>湯晏甄 Yen-Chen Tang</strong><br>
+                                國立東華大學 公共行政學系<br>
+                                Department of Public Administration<br>
+                                National Dong Hwa University<br>
+                            </p>
+                        </div>
+                        
+                    </div>
+
+                </div>
+            </div>
+        </div>    
+    </div>
+
+    <!-- ============================================================================ -->
+
+    <div class="introduction" id="intro">
+
+<!--         <div class="introduce_div_before">
+            <div class="introduce_div">
+                <div class="list">
+                    <ul>
+                        <li>Registration: codabench url</li>
+                        <li>Contact: <a href="mailto:lhlee@nycu.edu.tw" title="lhlee@nycu.edu.tw"><strong>Lung-Hao Lee</strong></a></li>
+                    </ul>
+                </div> 
+            </div>
+        </div> -->
+        <div class="introduce_div_before">
+            <div class="introduce_div">
+                <h1>Registration</h1>
+                    <!-- <p>CodaBench page: <a href='' target="_blank">TBD</a></p> -->
+                    <p>CodaBench page: TBD</p>
+            </div>
+        </div>
+        <div class="introduce_div_before">
+            <div class="introduce_div">
+                <h1>Contact</h1>
+                <p>Tzu-Mi Lin: <a href="mailto:ltmdegf4.ii12@nycu.edu.tw" title="lhlee@nycu.edu.tw">ltmdegf4.ii12@nycu.edu.tw</a></p>
+                <p>Wen-Ni Liu: <a href="mailto:nini910527@gmail.com" title="nini910527@gmail.com">nini910527@gmail.com</a></p>
+            </div>
+        </div>
+
+        
+        <div class="introduce_div_before">
+            <div class="introduce_div">
+                <h1>Background</h1>
+                <p>Sentiment analysis has emerged as a leading technique to automatically identify affective information within texts. In sentiment analysis, affective states are generally represented using either categorical or dimensional approaches (Calvo and Kim, 2013). The categorical approach represents affective states as several discrete classes (e.g., positive, negative, neutral), while the dimensional approach represents affective states as continuous numerical values on multiple dimensions, such as valence-arousal (VA) space (Russell, 1980), as shown in Fig. 1. The valence represents the degree of pleasant and unpleasant (or positive and negative) feelings, and the arousal represents the degree of excitement and calm. Based on this two-dimensional representation, any affective state can be represented as a point in the VA coordinate plane by determining the degrees of valence and arousal of given words (Wei et al., 2011; Malandrakis et al., 2013; Wang et al., 2016; Du and Zhang, 2016; Wu et la., 2017; Yu et al., 2020; Deng et al., 2022) or texts (Kim et al., 2010; Paltoglou et al, 2013; Goel et la., 2017; Zhu et al., 2019; Wang et al., 2019; 2020; Deng et al., 2023; Lin et al., 2024).</p>
+                <p>The first dimensional sentiment analysis (DSA) task for Chinese words (Yu et al., 20216) was organized at the IALP 2016 conference. The second edition of DSA task was organized at the IJCNLP 2017 conference to include both Chinese words and phrases (Yu et al., 2017). The third edition was organized at the ROCLING 2021 conference to explore the sentence-level dimensional sentiment analysis task on educational texts (students’ self-evaluated comments) (Yu et al., 2021). The fourth edition of DSA task was orginized at the ROCLING 2025 conferenceto to analyze medical multi-sentence texts (Lee et al., 2025). This year, we orginize the fifth edition of DSA task to analyze new immigrants reflection texts.</p>
+                <div class="center">
+                    <img src ="image/va.png">
+                </div>
+            </div>
+<!--             <div class="figure"> -->
+                <!-- <p>If you have any questions, </p> -->
+                
+<!--             </div> -->
+        </div>
+    </div>
+    
+    <!-- ============================================================================ -->
+
+    <div class='task' id='task'>
+        
+        <div class="introduce_div_before">
+            <div class="introduce_div">
+                <h1>Task Description</h1>
+                <p>Dimensional sentiment analysis is an effective technique to recognize the valence-arousal ratings from texts, indicating the degree from most negative to most positive for valence, and from most calm to most excited for arousal. In this task, participants are asked to provide a real-valued score from 1 to 9 for both valence and arousal dimensions for each new immigrants' reflection texts. The input format is “ID, texts”, and the output format is “ID, vallence_rating, arousal_rating”. Below are the input/output formats of the example sentences.</p>
+                <div class="part">
+                    <h3>Example 1</h3>
+                    <p>Input: ex01, 我時常祈禱或找其他事情做，這樣我就可以忘記我的問題。</p>
+                    <p>Output: ex01, 4.375, 5.0</p>
+                    <p></p>
+                    <h3>Example 2</h3>
+                    <p>Input: ex02, 爸爸，你一直是我的榜樣，最近我有些事情想和你聊聊，你的意見對我來說特別重要，你身上的智慧和力量，是我一直想學習的</p>
+                    <p>Output: ex02, 7.25, 6.5</p>
+                    <p></p>
+                </div>
+                
+            </div>  
+        </div>
+    </div>
+
+
+    <!-- ============================================================================ -->
+
+    <div class="registration" id="registration">
+        
+        <div class="introduce_div_before">
+            <div class="introduce_div">
+                <h1>Data</h1>
+                <br>
+                <h2>Training Set: Chinese EmoBank</h2>
+                <p><a href="http://nlp.innobic.yzu.edu.tw/resources/ChineseEmoBank.html">http://nlp.innobic.yzu.edu.tw/resources/ChineseEmoBank.html</a></p>
+                <br>
+                <p>The Chinese EmoBank (Lee et al., 2022) is a dimensional sentiment resource annotated with real-valued scores for both valence and arousal dimensions. The valence represents the degree of positive and negative sentiment, and arousal represents the degree of calm and excitement. Both dimensions range from 1 (highly negative or calm) to 9 (highly positive or excited). The Chinese EmoBank features various levels of text granularity including two lexicons called Chinese valence-arousal words (CVAW, 5,512 single words) and Chinese valence-arousal phrases (CVAP, 2,998 multi-word phrases) and two corpora called Chinese valence-arousal sentences (CVAS, 2,582 single sentences) and Chinese valence-arousal texts (CVAT, 2,969 multi-sentence texts).</p>
+                <br>
+                <div class="part">
+                    <h3 style="color: red;">Notes</h3>
+                    <div class="list">
+                        <ul>
+                            <li>The datasets are authorized to use for research purposes.</li>
+                            <li>The policy of this shared task is an open test. Participating systems are allowed to use other publicly available data for this shared task, but the use of other data should be specified in the final system description paper.</li>
+                        </ul>
+                    </div>
+                </div>  
+                <h2>Validation Set</h2>
+                <p>There are 200 new immigrants' reflection texts for system development.</p>
+                <h2>Test Set</h2>
+                <p>We will provide at least 1,100 new immigrants' reflection texts for system performance evaluation.</p>
+            </div>  
+        </div>
+    </div>
+    
+    <!-- ============================================================================ -->
+
+    <div class="keynote" id="key_note">
+        
+        <div class="introduce_div_before">
+            <div class="introduce_div">
+                <h1>Evaluation</h1>
+                <p>The performance is evaluated by examining the difference between machine-predicted ratings and human-annotated ratings (valence and arousal are treated independently). The evaluation metrics include: <strong style="color: red;">Mean Absolute Error (MAE)</strong> and <strong style="color: red;">Pearson Correlation Coefficient (PCC)</strong> , defined as follows</p>
+                <p><span>$$ MAE = \frac{1}{n} \sum_{i=1}^{n}|a_{i}-p_{i}| $$</span></p>
+                <p><span>$$ PCC = \frac{1}{n-1} \sum_{i=1}^{n}(\frac{a_{i}-\mu_{A}}{\sigma_{A}})(\frac{p_{i}-\mu_{P}}{\sigma_{P}}) $$</span></p>
+                <p>where \( a_{i}\in{A} \)  and \( p_{i}\in{P} \)  respectively denote the i-th actual value and predicted value, n is the number of test samples, and \( \mu_{A} \)  and \( \sigma_{A} \) respectively represent the mean value and the standard deviation of A, while \( \mu_{P} \) and \( \sigma_{P} \) respectively represent the mean value and the standard deviation of P. </p>
+                <p>The actual and predicted real values range from 1 to 9, so MAE measures the error rate in a range where the lowest value is 0 and the highest value is 8. A lower MAE indicates more accurate prediction performance. The PCC is a value between −1 and 1 that measures the linear correlation between the actual value and the predicated value. A lower MAE and a higher PCC indicate more accurate prediction performance. Each metric for the valence and arousal dimensions is ranked independently. A model’s overall ranking is computed based on the mean rank across the four metrics. The lower the mean rank, the better the system performance.</p>
+            </div>  
+        </div>
+   
+    </div>
+
+    <!-- ============================================================================ -->
+    <!-- <div class="introduction" id="ranking">
+        <div class="introduce_div_before">
+            <div class="introduce_div">
+                <h1>Official Ranking</h1>
+                
+                <p>Notes: Each metric in individual subtask is ranked independently. (*) means the rank for each metric. A system’s overall ranking is computed based on the mean rank. The lower the mean rank, the better the system performance.</p>
+                <br>  
+                <style type="text/css">
+            .tg  {border-collapse:collapse;border-spacing:0;}
+            .tg td{border-color:black;border-style:solid;border-width:1px;font-size:20px;
+              overflow:hidden;padding:10px 5px;word-break:normal;}
+            .tg th{border-color:black;border-style:solid;border-width:1px;font-size:20px;
+              font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+            .tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:center;font-size:20px}
+            </style>
+            <table class="tg"><thead>
+            <tbody>
+              <tr>
+                <td class="tg-c3ow" rowspan="2">Team</td>
+                <td class="tg-c3ow" colspan="4">Evaluation Metrics</td>
+                <td class="tg-c3ow" rowspan="2">Overall Rank</td>
+              </tr>
+              <tr>
+                <td class="tg-c3ow">V-MAE</td>
+                <td class="tg-c3ow">V-PCC</td>
+                <td class="tg-c3ow">A-MAE</td>
+                <td class="tg-c3ow">A-PCC</td>
+              </tr>
+              <tr>
+                <td class="tg-c3ow">CYUT-NLP</td>
+                <td class="tg-c3ow"><strong>0.46</strong></td>
+                <td class="tg-c3ow">0.78</td>
+                <td class="tg-c3ow"><strong>0.74</strong></td>
+                <td class="tg-c3ow"><strong>0.63</strong></td>
+                <td class="tg-c3ow">1</td>
+              </tr>
+              <tr>
+                <td class="tg-c3ow">TCU</td>
+                <td class="tg-c3ow">0.46</td>
+                <td class="tg-c3ow"><strong>0.81</strong> </td>
+                <td class="tg-c3ow">0.76</td>
+                <td class="tg-c3ow">0.61 </td>
+                <td class="tg-c3ow">2</td>
+              </tr>
+              <tr>
+                <td class="tg-c3ow">ntulaw</td>
+                <td class="tg-c3ow">0.5</td>
+                <td class="tg-c3ow">075</td>
+                <td class="tg-c3ow">0.79</td>
+                <td class="tg-c3ow">0.59</td>
+                <td class="tg-c3ow">3</td>
+              </tr>
+              <tr>
+                <td class="tg-c3ow">SCU-NLP</td>
+                <td class="tg-c3ow">0.51</td>
+                <td class="tg-c3ow">0.76</td>
+                <td class="tg-c3ow">0.87</td>
+                <td class="tg-c3ow">0.59</td>
+                <td class="tg-c3ow">4</td>
+              </tr>
+              <tr>
+                <td class="tg-c3ow">Monokeros</td>
+                <td class="tg-c3ow">0.53</td>
+                <td class="tg-c3ow">0.76</td>
+                <td class="tg-c3ow">0.82</td>
+                <td class="tg-c3ow">0.58</td>
+                <td class="tg-c3ow">5</td>
+              </tr>
+              <tr>
+                <td class="tg-c3ow">Hey Vergil</td>
+                <td class="tg-c3ow">0.63</td>
+                <td class="tg-c3ow">0.62</td>
+                <td class="tg-c3ow">1.01</td>
+                <td class="tg-c3ow">0.21</td>
+                <td class="tg-c3ow">6</td>
+              </tr>
+            </tbody></table>
+
+            <br>
+
+            <style type="text/css">
+            .tg  {border-collapse:collapse;border-spacing:0;}
+            .tg td{border-color:black;border-style:solid;border-width:1px;font-size:20px;
+              overflow:hidden;padding:10px 5px;word-break:normal;}
+            .tg th{border-color:black;border-style:solid;border-width:1px;font-size:20px;
+              font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+            .tg .tg-baqh{text-align:center;vertical-align:center;font-size:20px}
+            .tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:center;font-size:20px}
+                table {
+            margin: auto;
+            border-collapse: collapse;
+            width: 80%; /* 根据需要调整宽度 */
+        }
+            </style>
+
+            </div>
+        </div>
+    </div> -->
+
+    <!-- ============================================================================ -->
+
+    <!-- <div class='Tutorials' id='task_paper'>
+        
+        <div class="introduce_div_before">
+            <div class="introduce_div">
+                <h1>Task Paper</h1>
+                <p>If you have built a successful system and completed a submission on the leaderboard, we gladly invite you to submit a shared task paper to the SIGHAN 2024 workshop. If you would like to publish a paper, please carefully follow these instructions:</p>
+                <div class="part">
+                    <p>1.&nbsp;&nbsp;Write your paper using the <a href= https://github.com/acl-org/acl-style-files target="_blank">ACL 2024 template</a>.</p>
+                    <br>
+                    <p>2.&nbsp;&nbsp;Papers must be written in English.</p>
+                    <br>
+                    <p>3.&nbsp;&nbsp;Paper titles should adopt the format: <strong>“TEAM_NAME at SIGHAN-2024 dimABSA Task:”</strong> followed by a descriptive title of the proposed approach.</p>
+                    <br>
+                    <p>4.&nbsp;&nbsp;Submissions are not anonymous for review, so author names and affiliations could be included in the paper.</p>
+                    <br>
+                    <p>5.&nbsp;&nbsp;The page limitation is four pages (excluding references) for a single subtask; and the length limit is eight pages (excluding references) for multiple subtasks.</p>
+                    <br>
+                    <p>6.&nbsp;&nbsp;Please cite the following overview paper (just as we will cite your task paper).</p>
+                    <br>
+                    <p>Lung-Hao Lee, Liang-Chih Yu, Suge Wang, and Jian Liao. 2024. Overview of the SIGHAN 2024 shared task for Chinese dimensional aspect-based sentiment analysis. In <em>Proceedings of the 10th SIGHAN Workshop on Chinese Language Processing</em>. Association for Computational Linguistics.</p>
+                    <br>
+                    <p>7.&nbsp;&nbsp;Submission Deadline: <strong>17th June, 2024</strong> (anywhere on Earth)</p>
+                    <br>
+                    <p>8.&nbsp;&nbsp;Submission Site: <a href= https://openreview.net/group?id=aclweb.org/ACL/2024/Workshop/SIGHAN-10 target="_blank">OpenReview</a></p>
+                    <br>
+                    <p>9.&nbsp;&nbsp;<a href= https://docs.google.com/forms/d/e/1FAIpQLSeaJrvX1i3OO5z6-foEZB347jzNOIl30DoQKWjActQuGwZqNg/viewform target="_blank">Reviewer Nomination</a>: Similar to other shared tasks (e.g. SemEval), we ask at least one author per paper also acts as a reviewer. Please nominate the reviewer by the submssion deadline. If you do not nominate a reviewer, the first author or corresponding author will be automatically selected.</p>
+                    <br>
+                    <p>10.&nbsp;&nbsp;Each accepted task paper will be included in the SIGHAN-2024 proceedings. At least one author must register to present their developed system at the SIGHAN-2024 Workshop (16th August, collocated with ACL 2024, in Bangkok, Thailand).</p>
+                </div>
+                <p>The evaluation committee will select the Best Evaluation Paper Award and recommend two evaluation papers for publication in the <a href=https://www.mdpi.com/journal/electronics/special_issues/Affective_Computing target="_blank">Special Issue on New Advances in Affective Computing， Electronics (IF 2.9)</a>.</p>
+            </div>  
+        </div>
+    </div> -->
+    
+    <!-- ============================================================================ -->
+
+    <div class="special_session" id='special'>
+        
+        <div class="introduce_div_before">
+            <div class="introduce_div">
+                <h1>Important Dates</h1>
+                <div class="part">
+                    <!-- <h2>Important Dates</h2> -->
+                    <!-- <h2>V.&emsp;Important Dates</h2> -->
+                        <!-- <p>Registration:
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSe74D0A_sWAOKH_xtz9_uF7ws9G-cdF2gYiEm5YwONQOcctrA/viewform?vc=0&c=0&w=1&flr=0" target="_blank" title="uninstructed">
+                                Click here
+                            </a>
+                        </p> -->
+                    
+                    <div class="list">
+                        <ul>
+                            <li>Release of test data: <strong>July 1, 2025</strong></li>
+                            <li>Testing results submission due: <strong>July 3, 2025</strong></li>
+                            <li>Release of evaluation results: <strong>July 6, 2025</strong></li>
+                            <li>System description paper due: <strong>July 20, 2025</strong></li>
+                            <li>Notification of Acceptance: <strong>September 18, 2025</strong></li>
+                            <li>Camera-ready deadline: <strong>October 5, 2025</strong></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================================================ -->
+    
+    <div class="sharetask" id="ref">
+        
+        <div class="part">
+            <h1>References</h1>
+            <!-- <h2>References</h2> -->
+            <div class="list">
+                
+                <ul>
+                    <li>Rafael A. Calvo, and Sunghwan Mac Kim. 2013. Emotions in text: dimensional and categorical models. <i>Computational Intelligence</i>, 29(3):527-543.</li>
+                    <li>Munmun De Choudhury, Scott Counts, and Michael Gamon. 2012. Not all moods are created equal! Exploring human emotional states in social media. In <i>Proc. of ICWSM-12</i>, pages 66-73.</li>
+                    <li>Yu-Chih Deng, Cheng-Yu Tsai, Yih-Ru Wang, Sin-Horng Chen, and Lung-Hao Lee. 2022. Predicting Chinese Phrase-level Sentiment Intensity in Valence-Arousal Dimensions with Linguistic Dependency Features. <i>IEEE Access</i>, 10:126612-126620.</li>
+                    <li>Yu-Chih Deng, Yih-Ru Wang, Sin-Horng Chen, and Lung-Hao Lee. 2023. Towards Transformer Fusions for Chinese Sentiment Intensity Prediction in Valence-Arousal Dimensions. <i>IEEE Access</i>, 11:109974-109982.</li>
+                    <li>Steven Du and Xi Zhang. 2016. Aicyber’s system for IALP 2016 shared task: Character-enhanced word vectors and Boosted Neural Networks. In <i>Proc. of IALP-16</i>, pages 161–163.</li>
+                    <li>Pranav Goel, Devang Kulshreshtha, Prayas Jain and Kaushal Kumar Shukla. 2017. Prayas at EmoInt 2017: An Ensemble of Deep Neural Architectures for Emotion Intensity Prediction in Tweets. In <i>Proc. of WASSA-17</i>, pages 58–65.</li>
+                    <li>Sunghwan Mac Kim, Alessandro Valitutti, and Rafael A. Calvo. 2010. Evaluation of unsupervised emotion models to textual affect recognition. In <i>Proc. of the NAACL HLT 2010 Workshop on Computational Approaches to Analysis and Generation of Emotion in Text</i>, pages 62-70.</li>
+                    <li>Lung-Hao Lee, Jian-Hong Li, and Liang-Chih Yu. 2022. Chinese EmoBank: Building Valence-Arousal Resources for Dimensional Sentiment Analysis. <i>ACM Transactions on Asian and Low-Resource Language Information Processing</i>, 21(4): Article 65, 1-18.</li>
+                    <li>Lung-Hao Lee, Tzu-Mi Lin, Hsiu-Min Shih, Kuo-Kai Shyu, Anna S. Hsu, and Peih-Yinh Lu. 2025. ROCLING 2025 Shared Task: Chinese Dimensional Sentiment Analysis for Medical Self-reflection Texts. In <i>Proc. of ROCLING-25</i>, pages 375-380.</li>
+                    <li>Diefan Lin, Yi Wen, Weishi Wang, and Yan Su. 2024. Enhanced Sentiment Intensity Regression Through LoRA Fine-Tuning on Llama 3. <i>IEEE Access</i>, 12:108072-108087.</li>
+                    <li>N. Malandrakis, A. Potamianos, E. Iosif, and S. Narayanan. 2013. Distributional semantic models for affective text analysis. <i>IEEE Transactions on Audio, Speech, and Language Processing</i>, 21(11): 2379-2392.</li>
+                    <li>Myriam Munezero, Tuomo Kakkonen, and Calkin S. Montero. 2011. Towards automatic detection of antisocial behavior from texts. In <i>Proc. of the Workshop on Sentiment Analysis where AI meets Psychology (SAAIP) at IJCNLP-11</i>, pages 20-27.</li>
+                    <li>Georgios Paltoglou, Mathias Theunis, Arvid Kappas, and Mike Thelwall. 2013. Predicting emotional responses to long informal text. <i>IEEE Trans. Affective Computing</i>, 4(1):106-115.</li>
+                    <li>Jie Ren and Jeffrey V. Nickerson. 2014. Online review systems: How emotional language drives sales. In <i>Proc. of AMCIS-14</i>.</li>
+                    <li>James A. Russell. 1980. A circumplex model of affect. <i>Journal of Personality and Social Psychology</i>, 39(6):1161.</li>
+                    <li>Wen-Li Wei, Chung-Hsien Wu, and Jen-Chun Lin. 2011. A regression approach to affective rating of Chinese words from ANEW. In <i>Proc. of ACII-11</i>, pages 121-131.</li>
+                    <li>Liang-Chih Yu, Cheng-Wei Lee, Huan-Yi Pan, Chih-Yueh Chou, Po-Yao Chao, Zhi-Hong Chen, Shu-Fen Tseng, Chien-Lung Chan and K. Robert Lai. 2018. Improving early prediction of academic failure using sentiment analysis on self-evaluated comments. <i>Journal of Computer Assisted Learning</i>, 34(4):358-365.</li>
+                    <li>Liang-Chih Yu, Lung-Hao Lee, Shuai Hao, Jin Wang, Yunchao He, Jun Hu, K. Robert Lai, and Xuejie Zhang. 2016a. Building Chinese affective resources in valence-arousal dimensions. In <i>Proc. of NAACL/HLT-16</i>, pages 540-545.</li>
+                    <li>Liang-Chih Yu, Lung-Hao Lee, Jin Wang and Kam-Fai Wong. 2017. IJCNLP-2017 Task 2: Dimensional sentiment analysis for Chinese phrases. In <i>Proc. of IJCNLP-17</i>, pages 9-16.</li>
+                    <li>Liang-Chih Yu, Lung-Hao Lee and Kam-Fai Wong. 2016b. Overview of the IALP 2016 shared task on dimensional sentiment analysis for Chinese words. In <i>Proc. of IALP-16</i>, pages 156-160.</li>
+                    <li>Liang-Chih Yu, Jin Wang, K. Robert Lai and Xuejie Zhang. 2020. Pipelined neural networks for phrase-level sentiment intensity prediction. <i>IEEE Transactions on Affective Computing</i>, 11(3):447-458.</li>
+                    <li>Liang-Chih Yu, Jin Wang, Bo Peng, Chu-Ren Huang. 2021. ROCLING-2021 shared task: dimensional sentiment analysis for educational text. In <i>Proc. of ROCLING-21</i>, pages 385-388.</li>
+                    <li>Jin Wang, Liang-Chih Yu, K. Robert Lai and Xuejie Zhang. 2016. Community-based weighted graph model for valence-arousal prediction of affective words. <i>IEEE/ACM Trans. Audio, Speech and Language Processing</i>, 24(11):1957-1968.</li>
+                    <li>Jin Wang, Liang-Chih Yu, K. Robert Lai and Xuejie Zhang. 2020. Tree-structured regional CNN- LSTM model for dimensional sentiment analysis. <i>IEEE/ACM Transactions on Audio Speech and Language Processing</i>, 28:81–591.</li>
+                    <li>Chuhan Wu, Fangzhao Wu, Yongfeng Huang, Sixing Wu and Zhigang Yuan. 2017. THU NGN at IJCNLP-2017 Task 2: Dimensional sentiment analysis for Chinese phrases with deep LSTM. In <i>Proc. of IJCNLP-17</i>, pages 42-52.</li>
+                    <li>Suyang Zhu, Shoushan Li and Guodong Zhou. 2019. Adversarial attention modeling for multi- dimensional emotion regression. In <i>Proc. of ACL-19</i>, pages 471-480.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================================================ -->
+    <div class="footer">
+        &copy;ROCLING 2026 Shared Task || Updated: April 30, 2026
+    </div>
+    
+    <!-- 匯入main javascript -->
+    <script src="main.js"></script>
+
+</body>
+
+</html>
