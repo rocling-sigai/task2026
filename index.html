@@ -140,7 +140,7 @@
     <section id="data" class="section-padding bg-light">
         <div class="container">
             <h2 class="fw-bold mb-4">Data</h2>
-            <h4 class="h5 fw-bold mb-3">Training Set: <a href="http://nlp.innobic.yzu.edu.tw/resources/ChineseEmoBank.html" target="_blank" class="text-decoration-none">Chinese EmoBank (Lee et al., 2022)</a></h4>
+            <h4 class="h5 fw-bold mb-3">Training Set: <a href="http://nlp.innobic.yzu.edu.tw/resources/ChineseEmoBank.html" target="_blank" class="text-decoration-none">Chinese EmoBank</a> (Lee et al., 2022)</h4>
             <p>The Chinese EmoBank (Lee et al., 2022) is a dimensional sentiment resource annotated with real-valued scores for both valence and arousal dimensions. The valence represents the degree of positive and negative sentiment, and arousal represents the degree of calm and excitement. Both dimensions range from 1 (highly negative or calm) to 9 (highly positive or excited). The Chinese EmoBank features various levels of text granularity including two lexicons called Chinese valence-arousal words (CVAW, 5,512 single words) and Chinese valence-arousal phrases (CVAP, 2,998 multi-word phrases) and two corpora called Chinese valence-arousal sentences (CVAS, 2,582 single sentences) and Chinese valence-arousal texts (CVAT, 2,969 multi-sentence texts).</p>
             <div class="mt-4 p-4 bg-white border rounded shadow-sm">
                 <ul class="mb-0">
@@ -148,9 +148,9 @@
                     <li>Related Sentiment Resources:</li>
                 
                     <ul class="mb-0">
-                        <li class="mb-2"><a href="https://rocling2021.github.io/test.zip" target="_blank">ROCLING-2021 Task Datasets</a> (Yu et al., 2021)</li>
-                        <li class="mb-2"><a href="https://github.com/NYCU-NLP/ROCLING-2025-ST-DSA-MST" target="_blank">ROCLING-2025 DSA-MST Datasets</a> (Lee et al., 2025)</li>
-                        <li><a href="https://github.com/DimABSA/DimABSA2026" target="_blank">SemEval-2026 DimABSA Datasets</a> (Lee et al., 2026)</li>
+                        <li class="mb-2"><a href="https://rocling2021.github.io/test.zip" target="_blank" class="text-decoration-none">ROCLING-2021 Task Datasets</a> (Yu et al., 2021)</li>
+                        <li class="mb-2"><a href="https://github.com/NYCU-NLP/ROCLING-2025-ST-DSA-MST" target="_blank" class="text-decoration-none">ROCLING-2025 DSA-MST Datasets</a> (Lee et al., 2025)</li>
+                        <li><a href="https://github.com/DimABSA/DimABSA2026" target="_blank" class="text-decoration-none">SemEval-2026 DimABSA Datasets</a> (Lee et al., 2026)</li>
                     </ul>
                 </ul>
             </div>
@@ -172,7 +172,7 @@
                 $$ PCC = \frac{1}{n-1} \sum_{i=1}^{n}(\frac{a_{i}-\mu_{A}}{\sigma_{A}})(\frac{p_{i}-\mu_{P}}{\sigma_{P}})$$
             </div>
             <p>where \( a_{i}\in{A} \)  and \( p_{i}\in{P} \)  respectively denote the i-th actual value and predicted value, n is the number of test samples, and \( \mu_{A} \)  and \( \sigma_{A} \) respectively represent the mean value and the standard deviation of A, while \( \mu_{P} \) and \( \sigma_{P} \) respectively represent the mean value and the standard deviation of P. </p>
-                <p>The actual and predicted real values range from 1 to 9, so MAE measures the error rate in a range where the lowest value is 0 and the highest value is 8. A lower MAE indicates more accurate prediction performance. The PCC is a value between −1 and 1 that measures the linear correlation between the actual value and the predicated value. A lower MAE and a higher PCC indicate more accurate prediction performance. Each metric for the valence and arousal dimensions is ranked independently. <strong style="color: red;">A model’s overall ranking is computed based on the mean rank across the four metrics. The lower the mean rank, the better the system performance.</strong></p>
+                <p>The actual and predicted real values range from 1 to 9, so MAE measures the error rate in a range where the lowest value is 0 and the highest value is 8. A lower MAE indicates more accurate prediction performance. The PCC is a value between −1 and 1 that measures the linear correlation between the actual value and the predicated value. A lower MAE and a higher PCC indicate more accurate prediction performance. Each metric for the valence and arousal dimensions is ranked independently.A model’s overall ranking is computed based on the mean rank across the four metrics. The lower the mean rank, the better the system performance.</p>
         </div>
     </section>
 
