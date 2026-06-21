@@ -149,6 +149,7 @@
                 
                     <ul class="mb-0">
                         <li class="mb-2"><a href="https://rocling2021.github.io/test.zip" target="_blank" class="text-decoration-none">ROCLING-2021 Task Datasets</a> (Yu et al., 2021)</li>
+                        <li class="mb-2"><a href="https://github.com/NYCU-NLP/SIGHAN2024-dimABSA" target="_blank" class="text-decoration-none">SIGHAN-2024 Chinese dimABSA Datasets</a> (Lee et al., 2024)</li>
                         <li class="mb-2"><a href="https://github.com/NYCU-NLP/ROCLING-2025-ST-DSA-MST" target="_blank" class="text-decoration-none">ROCLING-2025 DSA-MST Datasets</a> (Lee et al., 2025)</li>
                         <li><a href="https://github.com/DimABSA/DimABSA2026" target="_blank" class="text-decoration-none">SemEval-2026 DimABSA Datasets</a> (Lee et al., 2026)</li>
                     </ul>
@@ -172,7 +173,7 @@
                 $$ PCC = \frac{1}{n-1} \sum_{i=1}^{n}(\frac{a_{i}-\mu_{A}}{\sigma_{A}})(\frac{p_{i}-\mu_{P}}{\sigma_{P}})$$
             </div>
             <p>where \( a_{i}\in{A} \)  and \( p_{i}\in{P} \)  respectively denote the i-th actual value and predicted value, n is the number of test samples, and \( \mu_{A} \)  and \( \sigma_{A} \) respectively represent the mean value and the standard deviation of A, while \( \mu_{P} \) and \( \sigma_{P} \) respectively represent the mean value and the standard deviation of P. </p>
-                <p>The actual and predicted real values range from 1 to 9, so MAE measures the error rate in a range where the lowest value is 0 and the highest value is 8. A lower MAE indicates more accurate prediction performance. The PCC is a value between −1 and 1 that measures the linear correlation between the actual value and the predicated value. A lower MAE and a higher PCC indicate more accurate prediction performance. Each metric for the valence and arousal dimensions is ranked independently.A model’s overall ranking is computed based on the mean rank across the four metrics. The lower the mean rank, the better the system performance.</p>
+                <p>The actual and predicted real values range from 1 to 9, so MAE measures the error rate in a range where the lowest value is 0 and the highest value is 8. A lower MAE indicates more accurate prediction performance. The PCC is a value between −1 and 1 that measures the linear correlation between the actual value and the predicated value. <strong>A lower MAE and a higher PCC indicate more accurate prediction performance. Each metric for the valence and arousal dimensions is ranked independently.A model’s overall ranking is computed based on the mean rank across the four metrics. The lower the mean rank, the better the system performance.</strong></p>
         </div>
     </section>
 
@@ -211,6 +212,7 @@
                 <li class="ref-item">Pranav Goel, Devang Kulshreshtha, Prayas Jain and Kaushal Kumar Shukla. 2017. Prayas at EmoInt 2017: An Ensemble of Deep Neural Architectures for Emotion Intensity Prediction in Tweets. In <i>Proc. of WASSA-17</i>, pages 58–65.</li>
                 <li class="ref-item">Sunghwan Mac Kim, Alessandro Valitutti, and Rafael A. Calvo. 2010. Evaluation of unsupervised emotion models to textual affect recognition. In <i>Proc. of the NAACL HLT 2010 Workshop on Computational Approaches to Analysis and Generation of Emotion in Text</i>, pages 62-70.</li>
                 <li class="ref-item">Lung-Hao Lee, Jian-Hong Li, and Liang-Chih Yu. 2022. Chinese EmoBank: Building Valence-Arousal Resources for Dimensional Sentiment Analysis. <i>ACM Transactions on Asian and Low-Resource Language Information Processing</i>, 21(4): Article 65, 1-18.</li>
+                <li class="ref-item">Lung-Hao Lee, Liang-Chih Yu, Suge Wang, and Jian Liao. 2024. Overview of the SIGHAN 2024 shared task for Chinese dimensional aspect-based sentiment analysis. In <i>Proceedings of the 10th SIGHAN Workshop on Chinese Language Processing (SIGHAN-10)</i>, pages 165–174.
                 <li class="ref-item">Lung-Hao Lee, Tzu-Mi Lin, Hsiu-Min Shih, Kuo-Kai Shyu, Anna S. Hsu, and Peih-Yinh Lu. 2025. ROCLING 2025 Shared Task: Chinese Dimensional Sentiment Analysis for Medical Self-reflection Texts. In <i>Proc. of ROCLING-25</i>, pages 375-380.</li>
                 <li class="ref-item">Lung-Hao Lee and Liang-Chih Yu and Natalia Loukashevich and Ilseyar Alimova and Alexander Panchenko and Tzu-Mi Lin and Zhe-Yu Xu and Jian-Yu Zhou and Guangmin Zheng and Jin Wang and Sharanya Awasthi and Jonas Becker and Jan Philip Wahle and Terry Ruas and Shamsuddeen Hassan Muhammad and Saif M. Mohammad. 2026.DimABSA: Building Multilingual and Multidomain Datasets for Dimensional Aspect-Based Sentiment Analysis. <i>arXiv:2601.23022</i></li>
                 <li class="ref-item">Diefan Lin, Yi Wen, Weishi Wang, and Yan Su. 2024. Enhanced Sentiment Intensity Regression Through LoRA Fine-Tuning on Llama 3. <i>IEEE Access</i>, 12:108072-108087.</li>
