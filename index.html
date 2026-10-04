@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
     
     <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body data-bs-spy="scroll" data-bs-target="#main-nav">
 
@@ -27,6 +27,7 @@
                     <li class="nav-item"><a class="nav-link" href="#task">Task</a></li>
                     <li class="nav-item"><a class="nav-link" href="#data">Data</a></li>
                     <li class="nav-item"><a class="nav-link" href="#evaluation">Evaluation</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#results">Results</a></li>
                     <li class="nav-item"><a class="nav-link" href="#dates">Dates</a></li>
                     <li class="nav-item"><a class="nav-link" href="#ref">References</a></li>
                 </ul>
@@ -39,7 +40,7 @@
         <div class="container">
             <!-- <span class="badge-custom">ROCLING Shared Task @ 2026</span> -->
             <h1 class="display-4 fw-bold mb-3" style="color: #2D82B7;">ROCLING 2026 Shared Task</h1>
-            <h2 class="h3 text-muted mb-5">Chinese Dimensional Sentiment Analysis for New Immigrants' Feeling Texts <br>(DSA-NIFT)</h2>
+            <h2 class="h3 text-muted mb-5">Chinese Dimensional Sentiment Analysis for<br>New Immigrants’ Feeling Texts<br>(DSA-NIFT)</h2>
             <!-- 將這段放進 Hero Section 的 row 裡面 -->
             <div class="row">
                 <div class="col-md-10">
@@ -70,8 +71,8 @@
                         <!-- 統一放置聯繫方式 -->
                         <div class="contact-info">
                             <p class="small mb-1 text-muted"><span class="fw-bold">Contact:</span></p>
-                            <p class="small mb-0">Discord: <a href="https://discord.gg/bCDPAzNn7" target="_blank" class="text-decoration-none">https://discord.gg/bCDPAzNn7</a></p>
-                            <!-- <p class="small mb-0">Wen-Ni Liu: <a href="mailto:nini910527@gmail.com" class="text-decoration-none">nini910527@gmail.com</a></p> -->
+                            <p class="small mb-0">Tzu-Mi Lin: <a href="mailto:ltmdegf4.ii12@nycu.edu.tw" class="text-decoration-none">ltmdegf4.ii12@nycu.edu.tw</a></p>
+                            <p class="small mb-0">Wen-Ni Liu: <a href="mailto:nini910527@gmail.com" class="text-decoration-none">nini910527@gmail.com</a></p>
                         </div>
                     </div>
                 </div>
@@ -84,7 +85,7 @@
         <div class="container">
             <h2 class="fw-bold mb-4">Registration</h2>
             <div class="p-4 rounded-3 border-start border-4 border-primary shadow-sm bg-light">
-                <h5 class="fw-bold">CodaBench page: <span class="text-primary"><a href="https://www.codabench.org/competitions/2163/" target="_blank" class="text-decoration-none">https://www.codabench.org/competitions/2163/<a></span></h5>
+                <h5 class="fw-bold">CodaBench page: <span class="text-primary">TBA</span></h5>
             </div>
         </div>
     </section>
@@ -149,7 +150,6 @@
                 
                     <ul class="mb-0">
                         <li class="mb-2"><a href="https://rocling2021.github.io/test.zip" target="_blank" class="text-decoration-none">ROCLING-2021 Task Datasets</a> (Yu et al., 2021)</li>
-                        <li class="mb-2"><a href="https://github.com/NYCU-NLP/SIGHAN2024-dimABSA" target="_blank" class="text-decoration-none">SIGHAN-2024 Chinese dimABSA Datasets</a> (Lee et al., 2024)</li>
                         <li class="mb-2"><a href="https://github.com/NYCU-NLP/ROCLING-2025-ST-DSA-MST" target="_blank" class="text-decoration-none">ROCLING-2025 DSA-MST Datasets</a> (Lee et al., 2025)</li>
                         <li><a href="https://github.com/DimABSA/DimABSA2026" target="_blank" class="text-decoration-none">SemEval-2026 DimABSA Datasets</a> (Lee et al., 2026)</li>
                     </ul>
@@ -173,12 +173,106 @@
                 $$ PCC = \frac{1}{n-1} \sum_{i=1}^{n}(\frac{a_{i}-\mu_{A}}{\sigma_{A}})(\frac{p_{i}-\mu_{P}}{\sigma_{P}})$$
             </div>
             <p>where \( a_{i}\in{A} \)  and \( p_{i}\in{P} \)  respectively denote the i-th actual value and predicted value, n is the number of test samples, and \( \mu_{A} \)  and \( \sigma_{A} \) respectively represent the mean value and the standard deviation of A, while \( \mu_{P} \) and \( \sigma_{P} \) respectively represent the mean value and the standard deviation of P. </p>
-                <p>The actual and predicted real values range from 1 to 9, so MAE measures the error rate in a range where the lowest value is 0 and the highest value is 8. A lower MAE indicates more accurate prediction performance. The PCC is a value between −1 and 1 that measures the linear correlation between the actual value and the predicated value. <strong>A lower MAE and a higher PCC indicate more accurate prediction performance. Each metric for the valence and arousal dimensions is ranked independently.A model’s overall ranking is computed based on the mean rank across the four metrics. The lower the mean rank, the better the system performance.</strong></p>
+                <p>The actual and predicted real values range from 1 to 9, so MAE measures the error rate in a range where the lowest value is 0 and the highest value is 8. A lower MAE indicates more accurate prediction performance. The PCC is a value between −1 and 1 that measures the linear correlation between the actual value and the predicated value. A lower MAE and a higher PCC indicate more accurate prediction performance. Each metric for the valence and arousal dimensions is ranked independently.A model’s overall ranking is computed based on the mean rank across the four metrics. The lower the mean rank, the better the system performance.</p>
+
+        </div>
+    </section>
+
+    <!-- 比賽結果 -->
+    <section id="results" class="section-padding bg-light">
+        <div class="container">
+            <h2 class="fw-bold mb-4">Official Ranking</h2>
+            <div class="evaluation-results">
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-hover align-middle text-center evaluation-results-table bg-white">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th rowspan="2" scope="col">Team<br><span class="fw-normal">(Submission)</span></th>
+                                    <th colspan="4" scope="colgroup">Evaluation Metric</th>
+                                    <th rowspan="2" scope="col">Avg.<br>Rank</th>
+                                    <th rowspan="2" scope="col">Overall<br>Rank</th>
+                                </tr>
+                                <tr>
+                                    <th scope="col">V-MAE<br><span class="fw-normal">(rank)</span></th>
+                                    <th scope="col">V-PCC<br><span class="fw-normal">(rank)</span></th>
+                                    <th scope="col">A-MAE<br><span class="fw-normal">(rank)</span></th>
+                                    <th scope="col">A-PCC<br><span class="fw-normal">(rank)</span></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="table-warning fw-bold">
+                                    <td>CYUT (#848249)</td>
+                                    <td>0.5366 (1)</td>
+                                    <td>0.8971 (1)</td>
+                                    <td>0.8658 (1)</td>
+                                    <td>0.4376 (1)</td>
+                                    <td>1.00</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>SCUNLP (#851040)</td>
+                                    <td>0.5793 (2)</td>
+                                    <td>0.8815 (2)</td>
+                                    <td>0.8951 (2)</td>
+                                    <td>0.4050 (3)</td>
+                                    <td>2.25</td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <td>aoff123 (#849556)</td>
+                                    <td>0.6018 (3)</td>
+                                    <td>0.8688 (3)</td>
+                                    <td>0.9403 (7)</td>
+                                    <td>0.4052 (2)</td>
+                                    <td>3.75</td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <td>NCKU_NLP (#850173)</td>
+                                    <td>0.6200 (4)</td>
+                                    <td>0.8663 (4)</td>
+                                    <td>0.9259 (4)</td>
+                                    <td>0.3566 (5)</td>
+                                    <td>4.25</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <td>BEDO (#851016)</td>
+                                    <td>0.6418 (5)</td>
+                                    <td>0.8619 (5)</td>
+                                    <td>0.8992 (3)</td>
+                                    <td>0.3204 (7)</td>
+                                    <td>5.00</td>
+                                    <td>5</td>
+                                </tr>
+                                <tr>
+                                    <td>wuhongyi (#845768)</td>
+                                    <td>0.6495 (6)</td>
+                                    <td>0.8586 (6)</td>
+                                    <td>0.9294 (5)</td>
+                                    <td>0.3366 (6)</td>
+                                    <td>5.75</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <td>YCW-NTUST (#845310)</td>
+                                    <td>0.6684 (7)</td>
+                                    <td>0.8542 (7)</td>
+                                    <td>0.9341 (6)</td>
+                                    <td>0.3581 (4)</td>
+                                    <td>6.00</td>
+                                    <td>7</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p class="text-muted small text-center mb-0">Table: Evaluation results and overall rankings of the participating systems in the DSA-NIFT task.</p>
+            </div>
         </div>
     </section>
 
     <!-- 日期 -->
-    <section id="dates" class="section-padding bg-light">
+    <section id="dates" class="section-padding">
         <div class="container">
             <h2 class="fw-bold mb-4">Important Dates</h2>
             <div class="table-responsive">
@@ -187,9 +281,9 @@
                         <tr><th class="ps-4">Schedule</th><th>Date</th></tr>
                     </thead>
                     <tbody>
-                        <tr><td class="ps-4">Release of test data</td><td><strong>July 13, 2026</strong></td></tr>
-                        <tr><td class="ps-4">Testing results submission due</td><td><strong>July 15, 2026</strong></td></tr>
-                        <tr><td class="ps-4">Release of evaluation results</td><td><strong>July 17, 2026</strong></td></tr>
+                        <tr><td class="ps-4">Release of test data</td><td><strong>July 15, 2026</strong></td></tr>
+                        <tr><td class="ps-4">Testing results submission due</td><td><strong>July 17, 2026</strong></td></tr>
+                        <tr><td class="ps-4">Release of evaluation results</td><td><strong>July 20, 2026</strong></td></tr>
                         <tr><td class="ps-4">System description paper due</td><td><strong>August 10, 2026</strong></td></tr>
                         <tr><td class="ps-4">Notification of Acceptance</td><td><strong>September 18, 2026</strong></td></tr>
                         <tr><td class="ps-4">Camera-ready deadline</td><td><strong>October 5, 2026</strong></td></tr>
@@ -212,7 +306,6 @@
                 <li class="ref-item">Pranav Goel, Devang Kulshreshtha, Prayas Jain and Kaushal Kumar Shukla. 2017. Prayas at EmoInt 2017: An Ensemble of Deep Neural Architectures for Emotion Intensity Prediction in Tweets. In <i>Proc. of WASSA-17</i>, pages 58–65.</li>
                 <li class="ref-item">Sunghwan Mac Kim, Alessandro Valitutti, and Rafael A. Calvo. 2010. Evaluation of unsupervised emotion models to textual affect recognition. In <i>Proc. of the NAACL HLT 2010 Workshop on Computational Approaches to Analysis and Generation of Emotion in Text</i>, pages 62-70.</li>
                 <li class="ref-item">Lung-Hao Lee, Jian-Hong Li, and Liang-Chih Yu. 2022. Chinese EmoBank: Building Valence-Arousal Resources for Dimensional Sentiment Analysis. <i>ACM Transactions on Asian and Low-Resource Language Information Processing</i>, 21(4): Article 65, 1-18.</li>
-                <li class="ref-item">Lung-Hao Lee, Liang-Chih Yu, Suge Wang, and Jian Liao. 2024. Overview of the SIGHAN 2024 shared task for Chinese dimensional aspect-based sentiment analysis. In <i>Proceedings of the 10th SIGHAN Workshop on Chinese Language Processing (SIGHAN-10)</i>, pages 165–174.
                 <li class="ref-item">Lung-Hao Lee, Tzu-Mi Lin, Hsiu-Min Shih, Kuo-Kai Shyu, Anna S. Hsu, and Peih-Yinh Lu. 2025. ROCLING 2025 Shared Task: Chinese Dimensional Sentiment Analysis for Medical Self-reflection Texts. In <i>Proc. of ROCLING-25</i>, pages 375-380.</li>
                 <li class="ref-item">Lung-Hao Lee and Liang-Chih Yu and Natalia Loukashevich and Ilseyar Alimova and Alexander Panchenko and Tzu-Mi Lin and Zhe-Yu Xu and Jian-Yu Zhou and Guangmin Zheng and Jin Wang and Sharanya Awasthi and Jonas Becker and Jan Philip Wahle and Terry Ruas and Shamsuddeen Hassan Muhammad and Saif M. Mohammad. 2026.DimABSA: Building Multilingual and Multidomain Datasets for Dimensional Aspect-Based Sentiment Analysis. <i>arXiv:2601.23022</i></li>
                 <li class="ref-item">Diefan Lin, Yi Wen, Weishi Wang, and Yan Su. 2024. Enhanced Sentiment Intensity Regression Through LoRA Fine-Tuning on Llama 3. <i>IEEE Access</i>, 12:108072-108087.</li>
